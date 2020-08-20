@@ -7,12 +7,6 @@ import models
 import forms
 app.secret_key = os.urandom(24)
 
-@app.route('/')
-
-
-
-
-
 
 @app.route('/base')
 def base():
