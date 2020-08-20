@@ -9,6 +9,11 @@ app.secret_key = os.urandom(24)
 
 @app.route('/')
 
+
+
+
+
+
 @app.route('/base')
 def base():
     return render_template('/base.html')
