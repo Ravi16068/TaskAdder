@@ -5,20 +5,91 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Tasks</title>
+    <style>
+      
+body {
+    background: #dd5e89;
+    background: -webkit-linear-gradient(to left, #dd5e89, #f7bb97);
+    background: linear-gradient(to left, #dd5e89, #f7bb97);
+    min-height: 100vh;
+  }
+    </style>
   </head>
   <body>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav">
-            <li class="nav-item"> <a href="{{ url_for('About') }}" class="nav-link">About</a></li>
-            <li class="nav-item"> <a href="{{ url_for('add') }}" class="nav-link">Add Task</a></li>
-            <li class="nav-item"> <a href="{{ url_for('Job') }}" class="nav-link">My Tasks</a></li>
-            <li class="nav-item"> <p class="nav-link">Welcome &nbsp;{{user}}</p></li>
+            <li class="nav-item"> <a href="{{ url_for('base') }}" class="nav-link">Home</a></li>
+            <li class="nav-item"> <a href="{{ url_for('logged') }}" class="nav-link">My Tasks</a></li>
+            <li class="nav-item"><a href="{{url_for('register')}}" class="nav-link">Register/Login</a></li>
 
-
-            
-
-        </ul>
+          </ul>
       </nav>
       
- 
+      </div>
+
+      ///////////////
+      <div class="flex flex-col">
+        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+              <table class="min-w-full divide-y divide-gray-200">
+                <thead>
+                  <tr>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Name
+                    </th>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Title
+                    </th>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Status
+                    </th>
+                    <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Role
+                    </th>
+                    <th class="px-6 py-3 bg-gray-50"></th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-no-wrap">
+                      <div class="flex items-center">
+                        <div class="flex-shrink-0 h-10 w-10">
+                        </div>
+                        <div class="ml-4">
+                          <div class="text-sm leading-5 font-medium text-gray-900">
+                            Jane Cooper
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-no-wrap">
+                      <div class="text-sm leading-5 text-gray-900">Regional Paradigm Technician</div>
+                      <div class="text-sm leading-5 text-gray-500">Optimization</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-no-wrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        Active
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                    <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    </td>
+                  </tr>
+      
+                  <!-- More rows... -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      </body>
+      

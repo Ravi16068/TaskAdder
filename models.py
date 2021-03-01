@@ -1,4 +1,5 @@
 from app import db
+
 #import flask_sqlalchemy import SQLalchemy
 
 #db= SQLalchemy()
@@ -23,3 +24,4 @@ class Task(db.Model):
 
     def __repr__(self):
         return f'{self.title}'
+

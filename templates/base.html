@@ -4,25 +4,45 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <link href="{{url_for('static', filename='css/row.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/alarm.css')}}" rel="stylesheet">
+
     <title>Tasks</title>
   </head>
+  <style> 
+  .h { font-family: comic sans MS;
+
+  }
+
+body {
+    background: #dd5e89;
+    background: -webkit-linear-gradient(to left, #dd5e89, #f7bb97);
+    background: linear-gradient(to left, #dd5e89, #f7bb97);
+    min-height: 100vh;
+  }
+
+
+    </style>
   <body>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav">
-          <li class="nav-item"><a href="{{ url_for('Login') }}" class="nav-link">Your Tasks</a></li>
-          <li class="nav-item"><a href="{{ url_for('Login') }}" class="nav-link">Login</a></li>
+          </a></li>
+          <li class="nav-item"><a href="{{ url_for('Job') }}" class="nav-link">Your Tasks</a></li>
           <li class="nav-item"><a href="{{ url_for('About') }}" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="{{ url_for('Login') }}" class="nav-link">Add Task</a></li>
+          <li class="nav-item"><a href="{{ url_for('add') }}" class="nav-link">Add Task</a></li>
+          <li class="nav-item"><a href="{{ url_for('logged') }}" class="nav-link">Login</a></li>
+
+
           
         </ul>
       </nav>
-      
-      <br>
-     
-  </body>
-</html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+      </head>
+ <!-- Footer -->
+ 
